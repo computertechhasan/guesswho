@@ -35,7 +35,7 @@ function loop_through_cards() {
 
 function loop_through_photos() {
     let image_holder = [];
-    let photo_api_url = window.location.hostname + ":5005/all_pics"
+    let photo_api_url = "http://" + window.location.hostname + ":5005/all_pics"
     console.log("sending request to " + photo_api_url);
     $.ajax({
         type: "GET",
