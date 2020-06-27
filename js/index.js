@@ -16,9 +16,11 @@ function get_photo_urls() {
             urls_aquired = 2;
             url_array = response_data;
             console.log("we made it");
+            return;
         })
         .fail(function(response_data, response_status, response_xhr) {
             console.log("we failed!");
+            return;
         })
     });
 }
