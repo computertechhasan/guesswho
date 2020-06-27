@@ -19,6 +19,7 @@ function get_photo_urls() {
             if (pics_array != null) {
                 let cards = document.getElementById("card-holder").childNodes;
                 for (let i = 0; i < cards.length; ++i) {
+                    let rand_num = Math.floor((Math.random() * 134) + 1);
                     // console.log("on " + cards[i]);
                     // console.log(cards[i].nodeName);
                     if (cards[i].nodeName.toLowerCase() === "div") {
@@ -35,7 +36,6 @@ function get_photo_urls() {
                                     let a_children = child_children[z].childNodes;
                                     let image = child_children[z].childNodes[0];
                                     // console.log("we are here");
-                                    let rand_num = Math.floor((Math.random() * 134) + 1);
                                     // console.log("r num is" + rand_num);
                                     image.src = "pics/" + pics_array[rand_num];
                                     // console.log("we found a " + image.nodeName);
