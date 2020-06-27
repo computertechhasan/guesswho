@@ -48,12 +48,12 @@ async function loop_through_cards() {
                         for (let z = 0; z < child_children.length; z++) {
                             // console.log(child_children[z].nodeName);
                             if (child_children[z].nodeName.toLowerCase() === "a") {
-                                console.log("we found an a");
+                                // console.log("we found an a");
                                 let a_children = child_children[z].childNodes;
                                 let image = child_children[z].childNodes[0];
 
                                 image.src = "pics/alexa/one.jpg";
-                                console.log("we found a " + image.nodeName);
+                                // console.log("we found a " + image.nodeName);
                             }
                         }
                     }
