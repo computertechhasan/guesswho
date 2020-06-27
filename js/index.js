@@ -12,7 +12,7 @@ function get_photo_urls() {
     .done(function(response_data, resonse_status, response_xhr) {
         // console.log("we out here!");
         // console.log(response_data);
-        urls_aquired = 1;
+        urls_aquired = 2;
         url_array = response_data;
     })
     .fail(function(response_data, response_status, response_xhr) {
@@ -30,7 +30,7 @@ function busy_wait() {
 async function loop_through_cards() {
     await get_photo_urls();
 
-    if (urls_aquired > 0) {
+    if (urls_aquired > 1) {
         let cards = document.getElementById("card-holder").childNodes;
         console.log(cards.length);
         // let amount_of_photos = url_array.length();
