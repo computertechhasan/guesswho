@@ -2,22 +2,24 @@ let urls_aquired = 1;
 let url_array = null;
 
 function get_photo_urls() {
-    let image_holder = [];
-    let photo_api_url = "http://" + window.location.hostname + ":5005/all_pics"
-    console.log("sending request to " + photo_api_url);
-    $.ajax({
-        type: "GET",
-        url: photo_api_url
-    })
-    .done(function(response_data, resonse_status, response_xhr) {
-        // console.log("we out here!");
-        // console.log(response_data);
-        urls_aquired = 2;
-        url_array = response_data;
-    })
-    .fail(function(response_data, response_status, response_xhr) {
-        console.log("we failed!");
-    })
+    return new Promise(resolve => {
+        let image_holder = [];
+        let photo_api_url = "http://" + window.location.hostname + ":5005/all_pics"
+        console.log("sending request to " + photo_api_url);
+        $.ajax({
+            type: "GET",
+            url: photo_api_url
+        })
+        .done(function(response_data, resonse_status, response_xhr) {
+            // console.log("we out here!");
+            // console.log(response_data);
+            urls_aquired = 2;
+            url_array = response_data;
+        })
+        .fail(function(response_data, response_status, response_xhr) {
+            console.log("we failed!");
+        })
+    });
 }
 
 function busy_wait() {
