@@ -15,7 +15,7 @@ def get_all_pics():
         for pic in os.listdir("/var/www/html/guesswho/pics/" + folder):
             ## print(folder + "/" + pic)
             all_pics.append(folder + "/" + pic)
-    return jsonify({all_pics})
+    return jsonify({"pic_array":all_pics})
 
 
 if __name__ == "__main__":
