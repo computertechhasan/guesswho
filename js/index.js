@@ -14,11 +14,17 @@ function get_photo_urls() {
         console.log(response_data);
         urls_aquired = 1;
         url_array = response_data;
-        loop_through_cards();
     })
     .fail(function(response_data, response_status, response_xhr) {
         console.log("we failed!");
     })
+}
+
+function busy_wait() {
+    while (urls_aquired < 1) {
+        console.log("sitting");
+    }
+    loop_through_cards();
 }
 
 function loop_through_cards() {
