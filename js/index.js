@@ -1,3 +1,5 @@
+let urls_aquired = 0;
+let url_array = null;
 
 function get_photo_urls() {
     let image_holder = [];
@@ -10,11 +12,11 @@ function get_photo_urls() {
     .done(function(response_data, resonse_status, response_xhr) {
         console.log("we out here!");
         console.log(response_data);
-        return response_data;
+        urls_aquired = 1;
+        url_array = response_data;
     })
     .fail(function(response_data, response_status, response_xhr) {
         console.log("we failed!");
-        return null;
     })
 }
 
