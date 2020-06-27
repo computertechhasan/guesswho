@@ -33,3 +33,18 @@ function loop_through_cards() {
     
 }
 
+function loop_through_photos() {
+    let image_holder = [];
+    let pic_directory = "/pics/"
+    $.ajax({
+        type: "GET",
+        url: pic_directory
+    })
+    .done(function(response_data, resonse_status, response_xhr) {
+        console.log("we out here!");
+        console.log(response_data);
+    })
+    .fail(function(response_data, response_status, response_xhr) {
+        console.log("we out here!");
+    })
+}
