@@ -48,7 +48,7 @@ function get_photo_urls() {
                                     console.log("found a " + child_children[z] + " has children");
                                     console.log(child_children[z].childNodes);
                                     console.log(child_children[z].childNodes[1].nodeName);
-                                    console.log(child_children[z].childNodes[1].childNodes[0]);
+                                    console.log(child_children[z].childNodes[1].childNodes);
                                     // childNodes[0].innerHTML = "cats yo";
                                     // console.log(name_label);
                                 }
