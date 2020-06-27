@@ -41,6 +41,9 @@ function get_photo_urls() {
                                     image.src = "pics/" + pics_array[rand_num];
                                     // console.log("we found a " + image.nodeName);
                                 }
+                                else if (child_children[z].nodeName.toLowerCase() === "div") {
+                                    console.log("found a " + child_children[z]);
+                                }
                             }
                         }
                     }
