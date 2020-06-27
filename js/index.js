@@ -16,6 +16,7 @@ function get_photo_urls() {
             url_array = response_data;
 
             if (url_array != null) {
+                let cards = document.getElementById("card-holder").childNodes;
                 for (let i = 0; i < cards.length; ++i) {
                     // console.log("on " + cards[i]);
                     // console.log(cards[i].nodeName);
@@ -49,7 +50,7 @@ function get_photo_urls() {
             console.log("we failed!");
         })
 
-
+        /*
         if (urls_aquired > 1) {
             let cards = document.getElementById("card-holder").childNodes;
             console.log(url_array);
@@ -85,4 +86,5 @@ function get_photo_urls() {
         else {
             console.log("it was not 1");
         }
+        */
 }
