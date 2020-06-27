@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+import os
 
 app = Flask(__name__)
 
@@ -7,6 +8,10 @@ def root():
     return jsonify({"we": "out here"})
 
 
+@app.route("/all_pics")
+def get_all_pics():
+    for item in os.listdir("/var/www/html/guesswho/pics"):
+        print(item)
 
 
 if __name__ == "__main__":
