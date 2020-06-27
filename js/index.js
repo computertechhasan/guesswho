@@ -34,7 +34,7 @@ async function loop_through_cards() {
         let cards = document.getElementById("card-holder").childNodes;
         console.log(cards.length);
         // let amount_of_photos = url_array.length();
-        if (all_photos != null) {
+        if (url_array != null) {
             for (let i = 0; i < cards.length; ++i) {
                 // console.log("on " + cards[i]);
                 // console.log(cards[i].nodeName);
