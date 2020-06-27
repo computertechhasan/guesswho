@@ -11,7 +11,7 @@ function get_photo_urls() {
             url: photo_api_url
         })
         .done(function(response_data, resonse_status, response_xhr) {
-            // console.log("we out here!");
+            console.log("we out here!");
             // console.log(response_data);
             urls_aquired = 2;
             url_array = response_data;
