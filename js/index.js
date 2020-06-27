@@ -32,7 +32,7 @@ function busy_wait() {
 
 async function loop_through_cards() {
     await get_photo_urls();
-
+    console.log("did we ever");
     if (urls_aquired > 1) {
         let cards = document.getElementById("card-holder").childNodes;
         console.log(url_array);
