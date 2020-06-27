@@ -19,19 +19,19 @@ function get_photo_urls() {
             if (url_array != null) {
                 let cards = document.getElementById("card-holder").childNodes;
                 for (let i = 0; i < cards.length; ++i) {
-                    // console.log("on " + cards[i]);
+                    console.log("on " + cards[i]);
                     // console.log(cards[i].nodeName);
                     if (cards[i].nodeName.toLowerCase() === "div") {
-                        // console.log("we found a div. it has children: ");
+                        console.log("we found a div. it has children: ");
                         // console.log(cards[i].childNodes);
                         let card_children = cards[i].childNodes;
                         for (let j = 0; j < card_children.length; ++j) {
-                            // console.log("the current child is " + card_children[j].nodeName);
+                            console.log("the current child is " + card_children[j].nodeName);
                             child_children = card_children[j].childNodes;
                             for (let z = 0; z < child_children.length; z++) {
-                                // console.log(child_children[z].nodeName);
+                                console.log(child_children[z].nodeName);
                                 if (child_children[z].nodeName.toLowerCase() === "a") {
-                                    // console.log("we found an a");
+                                    console.log("we found an a");
                                     let a_children = child_children[z].childNodes;
                                     let image = child_children[z].childNodes[0];
                                     console.log("we are here");
