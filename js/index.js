@@ -27,8 +27,8 @@ function get_photo_urls() {
                         // console.log(cards[i].childNodes);
                         let card_children = cards[i].childNodes;
                         for (let j = 0; j < card_children.length; ++j) {
-                            console.log("the current child is " + card_children[j].nodeName + " has children");
-                            console.log(card_children[j].childNodes);
+                            // console.log("the current child is " + card_children[j].nodeName + " has children");
+                            // console.log(card_children[j].childNodes);
                             child_children = card_children[j].childNodes;
                             for (let z = 0; z < child_children.length; z++) {
                                 // console.log(child_children[z].nodeName);
