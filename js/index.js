@@ -23,8 +23,8 @@ function get_photo_urls() {
                     // console.log("on " + cards[i]);
                     // console.log(cards[i].nodeName);
                     if (cards[i].nodeName.toLowerCase() === "div") {
-                        // console.log("we found a div. it has children: ");
-                        // console.log(cards[i].childNodes);
+                        console.log("we found a div. it has children: ");
+                        console.log(cards[i].childNodes);
                         let card_children = cards[i].childNodes;
                         for (let j = 0; j < card_children.length; ++j) {
                             // console.log("the current child is " + card_children[j].nodeName);
