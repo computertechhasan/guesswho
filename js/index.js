@@ -22,7 +22,7 @@ function get_photo_urls() {
 }
 
 function busy_wait() {
-    while (urls_aquired < 1) {
+    while (urls_aquired == 0) {
         console.log("sitting");
     }
     loop_through_cards();
