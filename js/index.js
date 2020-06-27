@@ -1,4 +1,4 @@
-let urls_aquired = 0;
+let urls_aquired = 1;
 let url_array = null;
 
 function get_photo_urls() {
@@ -10,8 +10,8 @@ function get_photo_urls() {
         url: photo_api_url
     })
     .done(function(response_data, resonse_status, response_xhr) {
-        console.log("we out here!");
-        console.log(response_data);
+        // console.log("we out here!");
+        // console.log(response_data);
         urls_aquired = 1;
         url_array = response_data;
     })
