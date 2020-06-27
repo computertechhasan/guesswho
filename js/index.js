@@ -34,7 +34,7 @@ function get_photo_urls() {
                                     // console.log("we found an a");
                                     let a_children = child_children[z].childNodes;
                                     let image = child_children[z].childNodes[0];
-                                    // console.log("we are here");
+                                    console.log("we are here");
                                     let rand_num = Math.floor((Math.random() * 134) + 1);
                                     console.log("r num is" + rand_num);
                                     image.src = "pics/alexa/one.jpg";
