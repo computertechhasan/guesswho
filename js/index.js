@@ -53,4 +53,7 @@ function loop_through_cards() {
             }
         }
     }
+    else {
+        console.log("it was not 1");
+    }
 }
