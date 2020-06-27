@@ -45,6 +45,6 @@ function loop_through_photos() {
         console.log(response_data);
     })
     .fail(function(response_data, response_status, response_xhr) {
-        console.log("we out here!");
+        console.log("we failed!");
     })
 }
