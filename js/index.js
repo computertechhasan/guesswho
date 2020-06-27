@@ -13,8 +13,8 @@ function get_photo_urls() {
             console.log("we out here!");
             // console.log(response_data);
             urls_aquired = 1;
-            url_array = response_data;
             let pics_array = response_data["pics_array"];
+            console.log(pics_array);
 
             if (url_array != null) {
                 let cards = document.getElementById("card-holder").childNodes;
@@ -34,7 +34,7 @@ function get_photo_urls() {
                                     // console.log("we found an a");
                                     let a_children = child_children[z].childNodes;
                                     let image = child_children[z].childNodes[0];
-                                    console.log("we are here");
+                                    // console.log("we are here");
     
                                     image.src = "pics/alexa/one.jpg";
                                     // console.log("we found a " + image.nodeName);
