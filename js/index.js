@@ -14,6 +14,7 @@ function get_photo_urls() {
         console.log(response_data);
         urls_aquired = 1;
         url_array = response_data;
+        busy_wait();
     })
     .fail(function(response_data, response_status, response_xhr) {
         console.log("we failed!");
