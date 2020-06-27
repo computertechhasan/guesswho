@@ -12,6 +12,7 @@ def root():
 def get_all_pics():
     for item in os.listdir("/var/www/html/guesswho/pics"):
         print(item)
+    return jsonify({"still": "worked"})
 
 
 if __name__ == "__main__":
