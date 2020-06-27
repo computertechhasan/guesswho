@@ -14,7 +14,6 @@ function get_photo_urls() {
         console.log(response_data);
         urls_aquired = 1;
         url_array = response_data;
-        busy_wait();
     })
     .fail(function(response_data, response_status, response_xhr) {
         console.log("we failed!");
@@ -29,6 +28,8 @@ function busy_wait() {
 }
 
 function loop_through_cards() {
+    await get_photo_urls();
+
     if (urls_aquired > 0) {
         let cards = document.getElementById("card-holder").childNodes;
         console.log(cards.length);
