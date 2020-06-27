@@ -1,8 +1,7 @@
-let urls_aquired = 1;
+let urls_aquired = 0;
 let url_array = null;
 
 function get_photo_urls() {
-    return new Promise(resolve => {
         let image_holder = [];
         let photo_api_url = "http://" + window.location.hostname + ":5005/all_pics"
         console.log("sending request to " + photo_api_url);
@@ -13,16 +12,14 @@ function get_photo_urls() {
         .done(function(response_data, resonse_status, response_xhr) {
             console.log("we out here!");
             // console.log(response_data);
-            urls_aquired = 2;
+            urls_aquired = 1;
             url_array = response_data;
             console.log("we made it");
-            return;
+            busy_wait();
         })
         .fail(function(response_data, response_status, response_xhr) {
             console.log("we failed!");
-            return;
         })
-    });
 }
 
 function busy_wait() {
@@ -33,7 +30,6 @@ function busy_wait() {
 }
 
 async function loop_through_cards() {
-    await get_photo_urls();
     console.log("did we ever");
     if (urls_aquired > 1) {
         let cards = document.getElementById("card-holder").childNodes;
