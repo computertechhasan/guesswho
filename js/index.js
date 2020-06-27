@@ -35,10 +35,10 @@ function loop_through_cards() {
 
 function loop_through_photos() {
     let image_holder = [];
-    let pic_directory = "/guesswho/pics/"
+    let photo_api_url = window.location.hostname + ":5005/all_pics"
     $.ajax({
         type: "GET",
-        url: pic_directory
+        url: photo_api_url
     })
     .done(function(response_data, resonse_status, response_xhr) {
         console.log("we out here!");
