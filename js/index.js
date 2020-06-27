@@ -23,8 +23,7 @@ function get_photo_urls() {
 function loop_through_cards() {
     let cards = document.getElementById("card-holder").childNodes;
     console.log(cards.length);
-    let all_photos = get_photo_urls();
-    let amount_of_photos = all_photos.length();
+    let amount_of_photos = url_array.length();
     if (all_photos != null) {
         for (let i = 0; i < cards.length; ++i) {
             // console.log("on " + cards[i]);
