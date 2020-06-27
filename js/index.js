@@ -27,7 +27,7 @@ function busy_wait() {
     loop_through_cards();
 }
 
-function loop_through_cards() {
+async function loop_through_cards() {
     await get_photo_urls();
 
     if (urls_aquired > 0) {
