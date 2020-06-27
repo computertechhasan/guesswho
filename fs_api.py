@@ -11,7 +11,7 @@ def root():
 @app.route("/all_pics")
 def get_all_pics():
     for folder in os.listdir("/var/www/html/guesswho/pics"):
-        for pic in os.listdir("/var/www/html/guesswho/pics" + folder):
+        for pic in os.listdir("/var/www/html/guesswho/pics/" + folder):
             print(folder + "/" + item)
     return jsonify({"still": "worked"})
 
