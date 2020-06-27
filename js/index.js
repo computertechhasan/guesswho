@@ -35,7 +35,7 @@ function loop_through_cards() {
 
 function loop_through_photos() {
     let image_holder = [];
-    let pic_directory = "/pics/"
+    let pic_directory = "/guesswho/pics/"
     $.ajax({
         type: "GET",
         url: pic_directory
