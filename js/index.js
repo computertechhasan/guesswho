@@ -14,7 +14,7 @@ function get_photo_urls() {
             // console.log(response_data);
             urls_aquired = 1;
             let pics_array = response_data["pics_array"];
-            console.log("respon data is " + response_data);
+            console.log(response_data);
 
             if (url_array != null) {
                 let cards = document.getElementById("card-holder").childNodes;
