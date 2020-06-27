@@ -47,7 +47,7 @@ function get_photo_urls() {
                                     // name_label.innerHTML = "CATS FAM";
                                     console.log("found a " + child_children[z] + " has children");
                                     console.log(child_children[z].childNodes);
-                                    let name_label = child_children[z].childNodes[1].childNodes[0];
+                                    let name_label = child_children[z].childNodes[1].childNodes[0].childNodes[0];
                                     console.log(name_label);
                                 }
                             }
