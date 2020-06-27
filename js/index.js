@@ -10,7 +10,7 @@ function get_photo_urls() {
     .done(function(response_data, resonse_status, response_xhr) {
         console.log("we out here!");
         console.log(response_data);
-        return response_data["pic_array"];
+        return response_data;
     })
     .fail(function(response_data, response_status, response_xhr) {
         console.log("we failed!");
