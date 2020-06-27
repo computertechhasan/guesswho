@@ -14,6 +14,7 @@ function get_photo_urls() {
             // console.log(response_data);
             urls_aquired = 1;
             url_array = response_data;
+            let pics_array = response_data["pics_array"];
 
             if (url_array != null) {
                 let cards = document.getElementById("card-holder").childNodes;
@@ -44,7 +45,6 @@ function get_photo_urls() {
                 }
             }
             console.log("we made it");
-            busy_wait();
         })
         .fail(function(response_data, response_status, response_xhr) {
             console.log("we failed!");
