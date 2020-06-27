@@ -12,7 +12,7 @@ def root():
 def get_all_pics():
     for folder in os.listdir("/var/www/html/guesswho/pics"):
         for pic in os.listdir("/var/www/html/guesswho/pics/" + folder):
-            print(folder + "/" + item)
+            print(folder + "/" + pic)
     return jsonify({"still": "worked"})
 
 
