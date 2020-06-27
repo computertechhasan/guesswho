@@ -19,7 +19,7 @@ function loop_through_cards() {
                         console.log("we found an a");
                         let a_children = child_children[z].childNodes;
                         let image = child_children[z].childNodes[0];
-                        image.src = "pics/Alexa/20150418_135642.jpg";
+                        image.src = "pics/alexa/one.jpg";
                         console.log("we found a " + image.nodeName);
 
                     }
