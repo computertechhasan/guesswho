@@ -43,7 +43,7 @@ function get_photo_urls() {
                                 }
                                 else if (child_children[z].nodeName.toLowerCase() === "div") {
                                     // let name_label = child_children[z].childNodes[0];
-                                    console.log(name_label.nodeName);
+                                    // console.log(name_label.nodeName);
                                     // name_label.innerHTML = "CATS FAM";
                                     console.log("found a " + child_children[z] + " has children");
                                     console.log(child_children[z].childNodes);
