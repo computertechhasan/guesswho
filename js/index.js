@@ -44,6 +44,7 @@ function get_photo_urls() {
                     pic_a.appendChild(pic);
                     inner_div.appendChild(pic_a);
                     inner_div.appendChild(card_body);
+                    card_div.appendChild(inner_div);
                     outside_holder.appendChild(card_div);
                 }
                     // */
