@@ -17,7 +17,6 @@ function get_photo_urls() {
             let amount_of_pics = pics_array.length;
             // console.log("there are " + amount_of_pics + " pics");
             if (pics_array != null) {
-                console.log("we here");
 
                 let outside_holder = document.getElementById("card-holder"); 
                 for (i = 0; i < pics_array.length; ++i) {
@@ -38,7 +37,7 @@ function get_photo_urls() {
                     let name_header_four = document.createElement("h4");
                     name_header_four.classList.add("card-title");
                     let name_a = document.createElement("a");
-                    name_a.innerHTML = "HI I AM ALIVE";
+                    name_a.innerHTML = (pics_array[rand_num].split("/")[0] + " " + (pics_array[rand_num].split("/")[1]).split(".")[0]);
                     name_header_four.appendChild(name_a);
                     card_body.appendChild(name_header_four);
                     pic_a.appendChild(pic);
