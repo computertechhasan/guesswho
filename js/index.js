@@ -58,7 +58,7 @@ function get_photo_urls() {
                         }
                     }
 
-                    /*
+                    
                     let card_div = document.createElement("div");
                     card_div.classList.add("col-lg-4");
                     card_div.classList.add("col-md-6");
@@ -80,6 +80,7 @@ function get_photo_urls() {
                     pic_a.appendChild(pic);
                     inner_div.appendChild(pic_a);
                     inner_div.appendChild(card_body);
+                    /*
                     cards.appendChild(card_div);
                     */
                 }
