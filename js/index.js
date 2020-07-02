@@ -19,30 +19,33 @@ function get_photo_urls() {
             if (pics_array != null) {
                 console.log("we here");
 
-                let outside_holder = document.getElementById("card-holder"); 
-                let card_div = document.createElement("div");
-                card_div.classList.add("col-lg-4");
-                card_div.classList.add("col-md-6");
-                card_div.classList.add("mb-4");
-                let inner_div = document.createElement("div");
-                inner_div.classList.add("card");
-                inner_div.classList.add("h-100");
-                let pic_a = document.createElement("a");
-                let pic = document.createElement("img");
-                pic.classList.add("card-img-top");
-                let card_body = document.createElement("div");
-                card_body.classList.add("card-body");
-                let name_header_four = document.createElement("h4");
-                name_header_four.classList.add("card-title");
-                let name_a = document.createElement("a");
-                name_a.innerHTML = "HI I AM ALIVE";
-                name_header_four.appendChild(name_a);
-                card_body.appendChild(name_header_four);
-                pic_a.appendChild(pic);
-                inner_div.appendChild(pic_a);
-                inner_div.appendChild(card_body);
-                // /*
-                outside_holder.appendChild(card_div);
+                for (i = 0; i < pics_array.length; ++i) {
+                    let rand_num = Math.floor((Math.random() * pics_array.length) + 1);
+                    let outside_holder = document.getElementById("card-holder"); 
+                    let card_div = document.createElement("div");
+                    card_div.classList.add("col-lg-4");
+                    card_div.classList.add("col-md-6");
+                    card_div.classList.add("mb-4");
+                    let inner_div = document.createElement("div");
+                    inner_div.classList.add("card");
+                    inner_div.classList.add("h-100");
+                    let pic_a = document.createElement("a");
+                    let pic = document.createElement("img");
+                    pic.src = "pics/" + pics_array[rand_num];
+                    pic.classList.add("card-img-top");
+                    let card_body = document.createElement("div");
+                    card_body.classList.add("card-body");
+                    let name_header_four = document.createElement("h4");
+                    name_header_four.classList.add("card-title");
+                    let name_a = document.createElement("a");
+                    name_a.innerHTML = "HI I AM ALIVE";
+                    name_header_four.appendChild(name_a);
+                    card_body.appendChild(name_header_four);
+                    pic_a.appendChild(pic);
+                    inner_div.appendChild(pic_a);
+                    inner_div.appendChild(card_body);
+                    outside_holder.appendChild(card_div);
+                }
                     // */
 
                 /*
