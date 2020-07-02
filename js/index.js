@@ -82,7 +82,7 @@ function get_photo_urls() {
                     inner_div.appendChild(pic_a);
                     inner_div.appendChild(card_body);
                     // /*
-                    cards.appendChild(card_div);
+                    outside_holder.appendChild(card_div);
                     // */
                 }
             }
