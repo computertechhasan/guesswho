@@ -19,9 +19,9 @@ function get_photo_urls() {
             if (pics_array != null) {
                 console.log("we here");
 
+                let outside_holder = document.getElementById("card-holder"); 
                 for (i = 0; i < pics_array.length; ++i) {
                     let rand_num = Math.floor((Math.random() * pics_array.length) + 1);
-                    let outside_holder = document.getElementById("card-holder"); 
                     let card_div = document.createElement("div");
                     card_div.classList.add("col-lg-4");
                     card_div.classList.add("col-md-6");
