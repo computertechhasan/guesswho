@@ -49,7 +49,7 @@ function get_photo_urls() {
                                     console.log(child_children[z].childNodes);
                                     console.log(child_children[z].childNodes[1].nodeName);
                                     console.log(child_children[z].childNodes[1].childNodes[1]);
-                                    child_children[z].childNodes[1].childNodes[1].innerHTML = (pics_array[rand_num].split("/")[0] + " " + pics_array[rand_num].split("/")[1]);
+                                    child_children[z].childNodes[1].childNodes[1].innerHTML = (pics_array[rand_num].split("/")[0] + " " + (pics_array[rand_num].split("/")[1]).split(".")[0]);
                                     // childNodes[0].innerHTML = "cats yo";
                                     // console.log(name_label);
                                 }
