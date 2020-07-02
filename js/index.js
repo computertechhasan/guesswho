@@ -17,6 +17,33 @@ function get_photo_urls() {
             let amount_of_pics = pics_array.length;
             // console.log("there are " + amount_of_pics + " pics");
             if (pics_array != null) {
+
+                let card_div = document.createElement("div");
+                    card_div.classList.add("col-lg-4");
+                    card_div.classList.add("col-md-6");
+                    card_div.classList.add("mb-4");
+                    let inner_div = document.createElement("div");
+                    inner_div.classList.add("card");
+                    inner_div.classList.add("h-100");
+                    let pic_a = document.createElement("a");
+                    let pic = document.createElement("img");
+                    pic.classList.add("card-img-top");
+                    let card_body = document.createElement("div");
+                    card_body.classList.add("card-body");
+                    let name_header_four = document.createElement("h4");
+                    name_header_four.classList.add("card-title");
+                    let name_a = document.createElement("a");
+                    name_a.innerHTML = "HI I AM ALIVE";
+                    name_header_four.appendChild(name_a);
+                    card_body.appendChild(name_header_four);
+                    pic_a.appendChild(pic);
+                    inner_div.appendChild(pic_a);
+                    inner_div.appendChild(card_body);
+                    // /*
+                    outside_holder.appendChild(card_div);
+                    // */
+
+                /*
                 let outside_holder = document.getElementById("card-holder"); 
                 let cards = document.getElementById("card-holder").childNodes;
                 for (let i = 0; i < cards.length; ++i) {
@@ -60,31 +87,8 @@ function get_photo_urls() {
                     }
 
                     
-                    let card_div = document.createElement("div");
-                    card_div.classList.add("col-lg-4");
-                    card_div.classList.add("col-md-6");
-                    card_div.classList.add("mb-4");
-                    let inner_div = document.createElement("div");
-                    inner_div.classList.add("card");
-                    inner_div.classList.add("h-100");
-                    let pic_a = document.createElement("a");
-                    let pic = document.createElement("img");
-                    pic.classList.add("card-img-top");
-                    let card_body = document.createElement("div");
-                    card_body.classList.add("card-body");
-                    let name_header_four = document.createElement("h4");
-                    name_header_four.classList.add("card-title");
-                    let name_a = document.createElement("a");
-                    name_a.innerHTML = "HI I AM ALIVE";
-                    name_header_four.appendChild(name_a);
-                    card_body.appendChild(name_header_four);
-                    pic_a.appendChild(pic);
-                    inner_div.appendChild(pic_a);
-                    inner_div.appendChild(card_body);
-                    // /*
-                    outside_holder.appendChild(card_div);
-                    // */
-                }
+                    
+                } */
             }
             console.log("we made it");
         })
