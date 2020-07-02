@@ -80,9 +80,9 @@ function get_photo_urls() {
                     pic_a.appendChild(pic);
                     inner_div.appendChild(pic_a);
                     inner_div.appendChild(card_body);
-                    /*
+                    // /*
                     cards.appendChild(card_div);
-                    */
+                    // */
                 }
             }
             console.log("we made it");
