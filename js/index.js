@@ -17,6 +17,7 @@ function get_photo_urls() {
             let amount_of_pics = pics_array.length;
             // console.log("there are " + amount_of_pics + " pics");
             if (pics_array != null) {
+                let outside_holder = document.getElementById("card-holder"); 
                 let cards = document.getElementById("card-holder").childNodes;
                 for (let i = 0; i < cards.length; ++i) {
                 
